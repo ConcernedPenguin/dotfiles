@@ -109,8 +109,8 @@ layouts = [
 
 # Widget defaults
 widget_defaults = dict(
-    font="Font Awesome 6 Free Solid",
-    fontsize=12,
+    font="FiraCode Nerd Font Bold",
+    fontsize=28,
     padding=2,
     foreground=foreground,
     background=background,
@@ -132,19 +132,19 @@ screens = [
                     background=background,
                 ),
                 widget.TextBox(
-                    text="",
-                    # font="JetBrainsMono Nerd Font",
+                    text="  ",
+                    # font="Font Awesome 6 Free Solid",
                     fontsize=29,
                     background=background,
                     foreground=foreground,
                     mouse_callbacks={"Button1": search},
                 ),
                 widget.Spacer(
-                    length=20,
+                    length=22,
                     background=background,
                 ),
                 widget.GroupBox(
-                    font="JetBrainsMono Nerd Font",
+                    # font="Font Awesome 6 Free Solid",
                     fontsize=28,
                     borderwidth=3,
                     highlight_method="block",
@@ -193,9 +193,9 @@ screens = [
                     )
                     .stdout.decode("utf-8")
                     .strip(),
-                    fmt=" {}",
+                    fmt="  {}",
                     fontsize=14,
-                    # font="JetBrainsMono Nerd Font",
+                    # font="Font Awesome 6 Free Solid",
                     background=background,
                     foreground=foreground,
                 ),
@@ -280,7 +280,7 @@ screens = [
                     background=background,
                 ),
                 widget.TextBox(
-                    text="⏻",
+                    text=" ⏻ ",
                     # font="Font Awesome 6 Free Solid",
                     fontsize=21,
                     margin=5,
@@ -289,7 +289,7 @@ screens = [
                     mouse_callbacks={"Button1": power},
                 ),
                 widget.Spacer(
-                    length=18,
+                    length=20,
                     background=background,
                 ),
             ],
